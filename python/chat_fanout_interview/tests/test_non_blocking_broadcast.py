@@ -1,6 +1,5 @@
 """Test that broadcasting is non-blocking with respect to slow users."""
 
-import pytest
 from chat.server import ChatServer
 from chat.transport import SlowTransport, InMemoryTransport
 from chat.models import Message
