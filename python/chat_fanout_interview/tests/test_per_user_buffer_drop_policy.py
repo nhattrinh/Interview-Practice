@@ -1,6 +1,5 @@
 """Test per-user buffer with drop policy when buffer is full."""
 
-import pytest
 from chat.server import ChatServer
 from chat.transport import SlowTransport
 from chat.models import Message
