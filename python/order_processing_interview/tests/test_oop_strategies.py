@@ -5,7 +5,6 @@ This test verifies that custom payment gateways and strategies
 can be injected without modifying core logic.
 """
 
-import pytest
 from orders import (
     Order,
     PaymentGateway,
