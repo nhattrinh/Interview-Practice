@@ -4,7 +4,6 @@ This test verifies that the ParserRegistry can register custom parsers
 for different content types and route to the correct parser.
 '''
 import pytest
-from dataclasses import dataclass
 from crawler.parse import ParserRegistry, ParsedPage
 
 
