@@ -213,3 +213,6 @@ typescript/*
 python/*
 !python/.gitkeep
 !python/order_processing_interview/
+!python/chat_fanout_interview/
+!python/crawler_interview/
+!python/notif_interview/
