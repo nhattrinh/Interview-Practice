@@ -1,7 +1,4 @@
 """Rate limiting for notifications."""
-from typing import Optional
-
-
 class RateLimiter:
     """
     Rate limiter using token bucket algorithm.
