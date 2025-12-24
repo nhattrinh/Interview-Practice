@@ -213,3 +213,4 @@ typescript/*
 python/*
 !python/.gitkeep
 !python/crawler_interview/
+!python/notif_interview/
