@@ -1,5 +1,4 @@
 """Tests for OOP extensibility via factory/registry pattern."""
-import pytest
 from notif.models import Event, Notification, DeliveryResult
 from notif.service import NotificationService, FakeClock
 from notif.sender import NotificationSender
