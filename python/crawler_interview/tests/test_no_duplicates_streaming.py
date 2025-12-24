@@ -4,7 +4,6 @@ This test verifies that the pipeline:
 1. Deduplicates URLs (never processes the same URL twice)
 2. Streams results incrementally without building large in-memory lists
 '''
-import pytest
 from crawler.clock import FakeClock
 from crawler.fetch import FakeFetcher
 from crawler.parse import ParserRegistry
