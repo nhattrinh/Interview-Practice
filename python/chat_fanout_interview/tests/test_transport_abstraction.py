@@ -1,6 +1,5 @@
 """Test that transport layer is properly abstracted and pluggable."""
 
-import pytest
 from chat.server import ChatServer
 from chat.transport import Transport
 from chat.models import Message
