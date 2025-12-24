@@ -5,7 +5,6 @@ This test verifies that the idempotency store prevents duplicate charges
 even if the same job is processed multiple times.
 """
 
-import pytest
 from orders import (
     Order,
     FakeGateway,
