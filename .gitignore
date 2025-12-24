@@ -212,5 +212,6 @@ typescript/*
 !typescript/.gitkeep
 python/*
 !python/.gitkeep
+!python/chat_fanout_interview/
 !python/crawler_interview/
 !python/notif_interview/
