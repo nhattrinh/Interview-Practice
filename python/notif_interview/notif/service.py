@@ -1,6 +1,6 @@
 """Main notification service."""
 from typing import Optional, Set
-from notif.models import Event, EmailNotification, SMSNotification, DeliveryResult
+from notif.models import Event, EmailNotification, SMSNotification
 from notif.queueing import InMemoryQueue
 from notif.sender import NotificationSender
 from notif.rate_limit import RateLimiter
