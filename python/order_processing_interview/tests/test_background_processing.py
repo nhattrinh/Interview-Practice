@@ -5,7 +5,6 @@ This test verifies that checkout() returns quickly with status 'pending'
 and that background workers asynchronously process the order.
 """
 
-import pytest
 from orders import (
     Order,
     FakeGateway,
