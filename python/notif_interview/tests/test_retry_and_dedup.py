@@ -1,5 +1,4 @@
 """Tests for retry logic and deduplication."""
-import pytest
 from notif.models import Event
 from notif.service import NotificationService, FakeClock
 from notif.sender import NotificationSender
