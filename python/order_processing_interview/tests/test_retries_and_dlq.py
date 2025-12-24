@@ -5,7 +5,6 @@ This test verifies that failed jobs are retried with exponential backoff
 and eventually moved to DLQ after exceeding retry limit.
 """
 
-import pytest
 from orders import (
     Order,
     FakeGateway,
