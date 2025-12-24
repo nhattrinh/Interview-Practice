@@ -3,7 +3,6 @@
 This test verifies that concurrent processing (with max_workers > 1) completes
 faster than sequential processing, measured in 'ticks' using FakeFetcher counters.
 '''
-import pytest
 from crawler.clock import FakeClock
 from crawler.fetch import FakeFetcher
 from crawler.parse import ParserRegistry
