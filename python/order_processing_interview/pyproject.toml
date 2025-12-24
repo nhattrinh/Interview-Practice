@@ -1,0 +1,20 @@
+[project]
+name = 'order_processing_interview'
+version = '0.1.0'
+description = 'Order processing system with background workers and idempotency'
+requires-python = '>=3.11'
+
+[project.optional-dependencies]
+test = [
+    'pytest>=7.0.0',
+]
+
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
+python_files = ['test_*.py']
+python_classes = ['Test*']
+python_functions = ['test_*']
