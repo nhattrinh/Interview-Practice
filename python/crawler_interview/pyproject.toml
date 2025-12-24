@@ -1,0 +1,17 @@
+[project]
+name = 'crawler_interview'
+version = '0.1.0'
+description = 'Concurrent web crawler interview practice'
+requires-python = '>=3.11'
+dependencies = [
+    'pytest>=7.0.0',
+]
+
+[build-system]
+requires = ['setuptools>=45', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
+python_files = ['test_*.py']
+python_functions = ['test_*']
