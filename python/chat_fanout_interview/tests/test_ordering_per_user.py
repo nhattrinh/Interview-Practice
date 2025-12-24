@@ -1,6 +1,5 @@
 """Test that message ordering is preserved per user."""
 
-import pytest
 from chat.server import ChatServer
 from chat.transport import InMemoryTransport, SlowTransport
 from chat.models import Message
