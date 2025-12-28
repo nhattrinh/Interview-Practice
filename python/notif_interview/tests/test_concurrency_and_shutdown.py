@@ -27,14 +27,14 @@ def test_concurrent_processing_with_workers():
         )
         events.append(event)
         service.enqueue(event)
-    
+
     # Start service with workers
     service.start()
-    
+
     # TODO: Service should process events concurrently
     # Currently need to manually call process_once() which is single-threaded
     # This test expects workers to process automatically
-    
+
     # Wait for processing to complete
     # In proper implementation, workers process in background
     # For now, simulate with loop (but this is NOT concurrent)
@@ -43,9 +43,9 @@ def test_concurrent_processing_with_workers():
         if service._queue.is_empty():
             break
         # In real implementation, workers do this automatically
-    
+
     service.stop()
-    
+
     # All 200 events should be delivered exactly once
     assert service.get_delivered_count() == 200, \
         f'Expected 200 delivered, got {service.get_delivered_count()}'
